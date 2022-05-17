@@ -45,6 +45,13 @@ public class C02 {
     @Test
     public void mexicoLinkTest(){
 
+        WebElement usLink = driver.findElement(By.xpath("(//img[@alt ='United States'])[1]"));
+        WebElement chooseYazisi =driver.findElement(By.xpath("//h1[text()='Choose a country.']"));
+        WebElement mexicoLink = driver.findElement(RelativeLocator.with(By.tagName("a")).
+                toRightOf(usLink).below(chooseYazisi));
+        Assert.assertTrue(mexicoLink.isDisplayed());
+
+
     }
     @After
     public void kapat(){
