@@ -35,6 +35,8 @@ public class C04_IFrame {
     }
     @After
     public void tearDown() {
+
+
         driver.close();
     }
     @Test
@@ -77,6 +79,8 @@ public class C04_IFrame {
         System.out.println(linkYaziElementi.getText());
 
         Thread.sleep(3000);
+
+        //
 
 
     }
