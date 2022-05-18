@@ -1,4 +1,4 @@
-package day08_alerts;
+package day08_alerts_iframe;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
@@ -81,7 +81,5 @@ public class C04_IFrame {
         Thread.sleep(3000);
 
         //
-
-
-    }
+ }
 }
