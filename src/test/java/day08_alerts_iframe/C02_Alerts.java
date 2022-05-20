@@ -1,4 +1,4 @@
-package day09_handleWindows_TestBase.day08_alerts_iframe;
+package day08_alerts_iframe;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.AfterClass;
