@@ -23,26 +23,21 @@ public class C01_faker extends TestBase {
         WebElement isimKutusu= driver.findElement(By.xpath("//input[@name='firstname']"));
         // geriye kalan alanlari TAB ile dolasarak
         // formu doldurun
+
         Actions actions= new Actions(driver);
-        Faker faker=new Faker();
+        Faker faker = new Faker();
         String fakeMail=faker.internet().emailAddress();
-        actions.click(isimKutusu)
-                .sendKeys(faker.name().firstName())
+        actions.click(isimKutusu).
+                sendKeys(faker.name().firstName())
                 .sendKeys(Keys.TAB)
                 .sendKeys(faker.name().lastName())
-                .sendKeys(Keys.TAB)
-                .sendKeys(fakeMail)
                 .sendKeys(Keys.TAB)
                 .sendKeys(fakeMail)
                 .sendKeys(Keys.TAB)
                 .sendKeys(faker.internet().password())
                 .sendKeys(Keys.TAB)
                 .sendKeys(Keys.TAB)
-                .sendKeys("Jan")
-                .sendKeys(Keys.TAB)
-                .sendKeys("15")
-                .sendKeys(Keys.TAB)
-                .sendKeys("2000")
+                .sendKeys("200")
                 .sendKeys(Keys.TAB)
                 .sendKeys(Keys.TAB)
                 .sendKeys(Keys.ARROW_DOWN)
@@ -52,6 +47,7 @@ public class C01_faker extends TestBase {
                 .sendKeys(Keys.TAB)
                 .sendKeys(Keys.ENTER)
                 .perform();
-        Thread.sleep(15000);
+        Thread.sleep(5000);
+
     }
 }

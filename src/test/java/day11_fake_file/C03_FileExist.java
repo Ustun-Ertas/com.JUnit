@@ -1,5 +1,6 @@
 package day11_fake_file;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.nio.file.Files;
@@ -37,7 +38,7 @@ public class C03_FileExist {
         String ortakKisim="\\Desktop\\text.txt";
 
         String masaUstuDosyaYolu=farkliKisim+ortakKisim;
-        System.out.println(Files.exists(Paths.get(masaUstuDosyaYolu)));
+        Assert.assertTrue(Files.exists(Paths.get(masaUstuDosyaYolu)));
 
     }
 }
