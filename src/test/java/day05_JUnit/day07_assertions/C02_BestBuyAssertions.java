@@ -1,4 +1,4 @@
-package day07_assertions;
+package day05_JUnit.day07_assertions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.AfterClass;
@@ -58,6 +58,9 @@ public class C02_BestBuyAssertions {
         //      ○ FrancaisLinkTest => Fransizca Linkin görüntülendiğini test edin
         WebElement francaisElementi= driver.findElement(By.xpath("//*[text()='Français']"));
         Assert.assertTrue(francaisElementi.isDisplayed());
+
+
+
     }
 
 }
